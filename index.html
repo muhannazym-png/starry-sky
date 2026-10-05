@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Memories in the Stars</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="space"></div>
+  <div class="nebula nebula-one"></div>
+  <div class="nebula nebula-two"></div>
+
+  <header class="top-title">
+    <div class="eyebrow">OUR LITTLE UNIVERSE</div>
+    <h1>all these stars are our memories</h1>
+    <p>tap a star and find a moment I never want to forget</p>
+  </header>
+
+  <main class="hero">
+    <div class="hero-glow"></div>
+    <div class="quote">
+      <span>all my wishes on the falling stars</span>
+      <strong>are to be with you</strong>
+    </div>
+    <div class="hint">✦ choose a star ✦</div>
+  </main>
+
+  <div id="stars-layer" aria-label="Memory stars"></div>
+
+  <div class="shooting-stars" aria-hidden="true">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="modal" id="memoryModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <section class="memory-card" role="dialog" aria-modal="true" aria-labelledby="memoryDate">
+      <button class="close-btn" id="closeModal" aria-label="Close memory">×</button>
+      <div class="tiny-star">✦</div>
+      <div class="memory-date" id="memoryDate"></div>
+      <h2 id="memoryTitle"></h2>
+      <div class="memory-text" id="memoryText"></div>
+      <div class="memory-footer">one star · one memory</div>
+    </section>
+  </div>
+
+  <footer class="footer-note">
+    Some stars disappear. Some are born again. The memories stay.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
